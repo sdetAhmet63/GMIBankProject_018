@@ -11,9 +11,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 16984600,
-              "status": "failed"
+              "duration": 37844341100,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -24,8 +23,8 @@
           },
           {
             "result": {
-              "duration": 998600,
-              "status": "skipped"
+              "duration": 461571600,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -37,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.320Z",
+        "start_timestamp": "2020-12-11T02:45:06.884Z",
         "before": [
           {
             "result": {
-              "duration": 5994800,
+              "duration": 1998200,
               "status": "passed"
             },
             "match": {
@@ -58,8 +57,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1997600,
-              "status": "skipped"
+              "duration": 259757900,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"111-11-1111\" with valid credential",
@@ -76,7 +75,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 125884400,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -87,7 +87,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10035839300,
+              "status": "passed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -115,9 +116,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 998800,
-              "status": "failed"
+              "duration": 933134600,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -128,8 +128,8 @@
           },
           {
             "result": {
-              "duration": 1000200,
-              "status": "skipped"
+              "duration": 403627800,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.524Z",
+        "start_timestamp": "2020-12-11T02:45:55.967Z",
         "before": [
           {
             "result": {
@@ -161,8 +161,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1998300,
-              "status": "skipped"
+              "duration": 186825000,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"111-22-3333\" with valid credential",
@@ -179,7 +179,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 119889200,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -190,8 +191,8 @@
           },
           {
             "result": {
-              "duration": 2995900,
-              "status": "skipped"
+              "duration": 10048625000,
+              "status": "passed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -219,9 +220,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999700,
-              "status": "failed"
+              "duration": 905162400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -232,8 +232,8 @@
           },
           {
             "result": {
-              "duration": 999500,
-              "status": "skipped"
+              "duration": 429599900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -245,10 +245,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.565Z",
+        "start_timestamp": "2020-12-11T02:46:07.671Z",
         "before": [
           {
             "result": {
+              "duration": 998700,
               "status": "passed"
             },
             "match": {
@@ -265,8 +266,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1997800,
-              "status": "skipped"
+              "duration": 194817800,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"111-55-1111\" with valid credential",
@@ -283,7 +284,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 132877900,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -294,7 +296,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10060292800,
+              "status": "passed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -322,9 +325,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999000,
-              "status": "failed"
+              "duration": 811250400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -335,8 +337,8 @@
           },
           {
             "result": {
-              "duration": 1000200,
-              "status": "skipped"
+              "duration": 395631100,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -348,7 +350,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.590Z",
+        "start_timestamp": "2020-12-11T02:46:19.406Z",
         "before": [
           {
             "result": {
@@ -368,8 +370,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1998100,
-              "status": "skipped"
+              "duration": 168843700,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"999-99-9999\" with valid credential",
@@ -386,7 +388,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 117893100,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -397,7 +400,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.there_should_be_a_valid_SSN_respecting(US_01_StepDefinitions.java:41)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/admin/IdeaProjects/GMIBankProject_018/src/test/resources/features/us01.feature:12)\r\n",
+              "duration": 103902000,
+              "status": "failed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -425,9 +430,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 998500,
-              "status": "failed"
+              "duration": 830231100,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -438,8 +442,8 @@
           },
           {
             "result": {
-              "duration": 1000200,
-              "status": "skipped"
+              "duration": 396632000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -451,7 +455,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.613Z",
+        "start_timestamp": "2020-12-11T02:46:21.029Z",
         "before": [
           {
             "result": {
@@ -471,8 +475,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2996400,
-              "status": "skipped"
+              "duration": 182829600,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"999-99-1111\" with valid credential",
@@ -489,8 +493,8 @@
           },
           {
             "result": {
-              "duration": 999400,
-              "status": "skipped"
+              "duration": 121889900,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -501,8 +505,9 @@
           },
           {
             "result": {
-              "duration": 998800,
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.there_should_be_a_valid_SSN_respecting(US_01_StepDefinitions.java:41)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/admin/IdeaProjects/GMIBankProject_018/src/test/resources/features/us01.feature:12)\r\n",
+              "duration": 103900800,
+              "status": "failed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -530,9 +535,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999500,
-              "status": "failed"
+              "duration": 786270400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -543,7 +547,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 415617900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -555,11 +560,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.633Z",
+        "start_timestamp": "2020-12-11T02:46:22.685Z",
         "before": [
           {
             "result": {
-              "duration": 998900,
               "status": "passed"
             },
             "match": {
@@ -576,8 +580,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998600,
-              "status": "skipped"
+              "duration": 172835800,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"222-11-1111\" with valid credential",
@@ -594,7 +598,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 115893400,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -605,7 +610,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10064006800,
+              "status": "passed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -633,8 +639,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "status": "failed"
+              "duration": 1737388700,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -645,7 +651,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 590451700,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -657,11 +664,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.651Z",
+        "start_timestamp": "2020-12-11T02:46:34.250Z",
         "before": [
           {
             "result": {
-              "duration": 998900,
               "status": "passed"
             },
             "match": {
@@ -678,8 +684,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1997000,
-              "status": "skipped"
+              "duration": 254762800,
+              "status": "passed"
             },
             "line": 10,
             "name": "Enter the SSN \"456-25-1634\" with valid credential",
@@ -696,8 +702,8 @@
           },
           {
             "result": {
-              "duration": 999500,
-              "status": "skipped"
+              "duration": 182831500,
+              "status": "passed"
             },
             "line": 11,
             "name": "Click on first name box",
@@ -708,8 +714,8 @@
           },
           {
             "result": {
-              "duration": 1998800,
-              "status": "skipped"
+              "duration": 10039585700,
+              "status": "passed"
             },
             "line": 12,
             "name": "There should be a valid SSN respecting",
@@ -737,9 +743,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 9989300,
-              "status": "failed"
+              "duration": 806252500,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -750,8 +755,8 @@
           },
           {
             "result": {
-              "duration": 999600,
-              "status": "skipped"
+              "duration": 472089500,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -763,7 +768,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.670Z",
+        "start_timestamp": "2020-12-11T02:46:47.064Z",
         "before": [
           {
             "result": {
@@ -783,8 +788,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999600,
-              "status": "skipped"
+              "duration": 175837300,
+              "status": "passed"
             },
             "line": 26,
             "name": "Enter the name \"H\" with valid credential",
@@ -801,7 +806,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 132390200,
+              "status": "passed"
             },
             "line": 27,
             "name": "click on last name box",
@@ -812,8 +818,8 @@
           },
           {
             "result": {
-              "duration": 998000,
-              "status": "skipped"
+              "duration": 10022634700,
+              "status": "passed"
             },
             "line": 28,
             "name": "There should be a valid name respecting",
@@ -841,9 +847,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999500,
-              "status": "failed"
+              "duration": 851213400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -854,8 +859,8 @@
           },
           {
             "result": {
-              "duration": 1002000,
-              "status": "skipped"
+              "duration": 438591400,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -867,10 +872,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.712Z",
+        "start_timestamp": "2020-12-11T02:46:58.688Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -887,8 +893,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1996000,
-              "status": "skipped"
+              "duration": 350673400,
+              "status": "passed"
             },
             "line": 26,
             "name": "Enter the name \"Basderwerzcxvpk\" with valid credential",
@@ -905,7 +911,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 110898100,
+              "status": "passed"
             },
             "line": 27,
             "name": "click on last name box",
@@ -916,8 +923,8 @@
           },
           {
             "result": {
-              "duration": 1000600,
-              "status": "skipped"
+              "duration": 10008094100,
+              "status": "passed"
             },
             "line": 28,
             "name": "There should be a valid name respecting",
@@ -945,8 +952,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "status": "failed"
+              "duration": 825235600,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -957,8 +964,8 @@
           },
           {
             "result": {
-              "duration": 1002200,
-              "status": "skipped"
+              "duration": 434597300,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -970,7 +977,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.760Z",
+        "start_timestamp": "2020-12-11T02:47:10.456Z",
         "before": [
           {
             "result": {
@@ -990,8 +997,8 @@
         "steps": [
           {
             "result": {
-              "duration": 997700,
-              "status": "skipped"
+              "duration": 210805700,
+              "status": "passed"
             },
             "line": 26,
             "name": "Enter the name \"Hasan\" with valid credential",
@@ -1008,8 +1015,8 @@
           },
           {
             "result": {
-              "duration": 998900,
-              "status": "skipped"
+              "duration": 112894100,
+              "status": "passed"
             },
             "line": 27,
             "name": "click on last name box",
@@ -1020,7 +1027,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10051152300,
+              "status": "passed"
             },
             "line": 28,
             "name": "There should be a valid name respecting",
@@ -1048,9 +1056,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 997800,
-              "status": "failed"
+              "duration": 892173900,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1061,7 +1068,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 401626600,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1073,11 +1081,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.779Z",
+        "start_timestamp": "2020-12-11T02:47:22.099Z",
         "before": [
           {
             "result": {
-              "duration": 999400,
               "status": "passed"
             },
             "match": {
@@ -1094,8 +1101,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 255764400,
+              "status": "passed"
             },
             "line": 38,
             "name": "Enter the last name \"Basdfgkopmvcjkflda\" with valid credential",
@@ -1112,7 +1119,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 107898600,
+              "status": "passed"
             },
             "line": 39,
             "name": "click on Address box",
@@ -1123,7 +1131,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10031052000,
+              "status": "passed"
             },
             "line": 40,
             "name": "There should be a valid last name respecting",
@@ -1151,9 +1160,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 998100,
-              "status": "failed"
+              "duration": 834225900,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1164,7 +1172,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 419123900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1176,10 +1185,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.804Z",
+        "start_timestamp": "2020-12-11T02:47:33.798Z",
         "before": [
           {
             "result": {
+              "duration": 999200,
               "status": "passed"
             },
             "match": {
@@ -1196,8 +1206,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998200,
-              "status": "skipped"
+              "duration": 170841100,
+              "status": "passed"
             },
             "line": 38,
             "name": "Enter the last name \"H\" with valid credential",
@@ -1214,8 +1224,8 @@
           },
           {
             "result": {
-              "duration": 998600,
-              "status": "skipped"
+              "duration": 125398700,
+              "status": "passed"
             },
             "line": 39,
             "name": "click on Address box",
@@ -1226,8 +1236,8 @@
           },
           {
             "result": {
-              "duration": 999600,
-              "status": "skipped"
+              "duration": 10035488500,
+              "status": "passed"
             },
             "line": 40,
             "name": "There should be a valid last name respecting",
@@ -1255,9 +1265,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999600,
-              "status": "failed"
+              "duration": 903165900,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1268,7 +1277,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 481551800,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1280,7 +1290,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.825Z",
+        "start_timestamp": "2020-12-11T02:47:45.391Z",
         "before": [
           {
             "result": {
@@ -1300,8 +1310,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1000500,
-              "status": "skipped"
+              "duration": 191821700,
+              "status": "passed"
             },
             "line": 38,
             "name": "Enter the last name \"Kara\" with valid credential",
@@ -1318,7 +1328,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 102904600,
+              "status": "passed"
             },
             "line": 39,
             "name": "click on Address box",
@@ -1329,7 +1340,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10085889200,
+              "status": "passed"
             },
             "line": 40,
             "name": "There should be a valid last name respecting",
@@ -1357,8 +1369,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "status": "failed"
+              "duration": 950117100,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1369,8 +1381,8 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 415615300,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1382,10 +1394,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.840Z",
+        "start_timestamp": "2020-12-11T02:47:57.173Z",
         "before": [
           {
             "result": {
+              "duration": 985900,
               "status": "passed"
             },
             "match": {
@@ -1402,8 +1415,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1995400,
-              "status": "skipped"
+              "duration": 274745100,
+              "status": "passed"
             },
             "line": 49,
             "name": "Enter the Address",
@@ -1414,7 +1427,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 108899800,
+              "status": "passed"
             },
             "line": 50,
             "name": "click on mobile phone number box",
@@ -1425,8 +1439,8 @@
           },
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "duration": 998600,
+              "status": "passed"
             },
             "line": 51,
             "name": "There should be a valid address respecting",
@@ -1454,9 +1468,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999600,
-              "status": "failed"
+              "duration": 585462100,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1467,8 +1480,8 @@
           },
           {
             "result": {
-              "duration": 997900,
-              "status": "skipped"
+              "duration": 356666900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1480,7 +1493,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.854Z",
+        "start_timestamp": "2020-12-11T02:47:58.934Z",
         "before": [
           {
             "result": {
@@ -1500,8 +1513,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999400,
-              "status": "skipped"
+              "duration": 267750700,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"000-111-1111\" with valid credential",
@@ -1518,7 +1531,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 89916400,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -1529,8 +1543,8 @@
           },
           {
             "result": {
-              "duration": 999200,
-              "status": "skipped"
+              "duration": 10044923300,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -1558,9 +1572,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 39 more\r\n",
-              "duration": 999000,
-              "status": "failed"
+              "duration": 859202000,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1571,8 +1584,8 @@
           },
           {
             "result": {
-              "duration": 998800,
-              "status": "skipped"
+              "duration": 418614000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1584,11 +1597,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.870Z",
+        "start_timestamp": "2020-12-11T02:48:10.309Z",
         "before": [
           {
             "result": {
-              "duration": 998000,
+              "duration": 2996100,
               "status": "passed"
             },
             "match": {
@@ -1605,8 +1618,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1000400,
-              "status": "skipped"
+              "duration": 239775900,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"111-000-0000\" with valid credential",
@@ -1623,7 +1636,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 89917600,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -1634,8 +1648,8 @@
           },
           {
             "result": {
-              "duration": 999400,
-              "status": "skipped"
+              "duration": 10080956900,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -1663,9 +1677,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999800,
-              "status": "failed"
+              "duration": 925175400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1676,8 +1689,8 @@
           },
           {
             "result": {
-              "duration": 999400,
-              "status": "skipped"
+              "duration": 400138800,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1689,7 +1702,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.894Z",
+        "start_timestamp": "2020-12-11T02:48:22.015Z",
         "before": [
           {
             "result": {
@@ -1709,8 +1722,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999700,
-              "status": "skipped"
+              "duration": 212803000,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"999-999-9999\" with valid credential",
@@ -1727,8 +1740,8 @@
           },
           {
             "result": {
-              "duration": 998900,
-              "status": "skipped"
+              "duration": 87913800,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -1739,8 +1752,8 @@
           },
           {
             "result": {
-              "duration": 999200,
-              "status": "skipped"
+              "duration": 10046602600,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -1768,9 +1781,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999200,
-              "status": "failed"
+              "duration": 896338500,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1781,7 +1793,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 381826200,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1793,7 +1806,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.908Z",
+        "start_timestamp": "2020-12-11T02:48:33.699Z",
         "before": [
           {
             "result": {
@@ -1813,8 +1826,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 235778900,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"000-000-0000\" with valid credential",
@@ -1831,7 +1844,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 114890700,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -1842,8 +1856,8 @@
           },
           {
             "result": {
-              "duration": 998500,
-              "status": "skipped"
+              "duration": 10045271700,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -1871,9 +1885,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 1998400,
-              "status": "failed"
+              "duration": 834228000,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1884,8 +1897,8 @@
           },
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "duration": 385643200,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -1897,7 +1910,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.920Z",
+        "start_timestamp": "2020-12-11T02:48:45.381Z",
         "before": [
           {
             "result": {
@@ -1917,8 +1930,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999600,
-              "status": "skipped"
+              "duration": 235780100,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"999-000-1111\" with valid credential",
@@ -1935,8 +1948,8 @@
           },
           {
             "result": {
-              "duration": 998600,
-              "status": "skipped"
+              "duration": 91914800,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -1947,7 +1960,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10034675700,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -1975,9 +1989,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 1001100,
-              "status": "failed"
+              "duration": 872190900,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -1988,8 +2001,8 @@
           },
           {
             "result": {
-              "duration": 998500,
-              "status": "skipped"
+              "duration": 428601900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2001,10 +2014,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.937Z",
+        "start_timestamp": "2020-12-11T02:48:56.970Z",
         "before": [
           {
             "result": {
+              "duration": 997900,
               "status": "passed"
             },
             "match": {
@@ -2021,8 +2035,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999300,
-              "status": "skipped"
+              "duration": 229786000,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"000-999-1111\" with valid credential",
@@ -2039,7 +2053,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 86919000,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -2050,8 +2065,8 @@
           },
           {
             "result": {
-              "duration": 999300,
-              "status": "skipped"
+              "duration": 10144912800,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -2079,9 +2094,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 998500,
-              "status": "failed"
+              "duration": 940903300,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2092,8 +2106,8 @@
           },
           {
             "result": {
-              "duration": 1000400,
-              "status": "skipped"
+              "duration": 403136000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2105,11 +2119,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.952Z",
+        "start_timestamp": "2020-12-11T02:49:08.748Z",
         "before": [
           {
             "result": {
-              "duration": 999500,
               "status": "passed"
             },
             "match": {
@@ -2126,8 +2139,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1000100,
-              "status": "skipped"
+              "duration": 252764100,
+              "status": "passed"
             },
             "line": 56,
             "name": "Enter the GSM \"567-891-1294\" with valid credential",
@@ -2144,7 +2157,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 103903800,
+              "status": "passed"
             },
             "line": 57,
             "name": "click on username box",
@@ -2155,8 +2169,8 @@
           },
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 10055645000,
+              "status": "passed"
             },
             "line": 58,
             "name": "There should be a valid mobile phone number respecting",
@@ -2184,9 +2198,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999000,
-              "status": "failed"
+              "duration": 853209400,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2197,7 +2210,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 416614400,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2209,7 +2223,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.968Z",
+        "start_timestamp": "2020-12-11T02:49:20.514Z",
         "before": [
           {
             "result": {
@@ -2229,8 +2243,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999400,
-              "status": "skipped"
+              "duration": 147862600,
+              "status": "passed"
             },
             "line": 72,
             "name": "Enter the valid username \"g\" with valid credentail",
@@ -2247,8 +2261,8 @@
           },
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 131878200,
+              "status": "passed"
             },
             "line": 73,
             "name": "click on email box",
@@ -2259,7 +2273,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10022904400,
+              "status": "passed"
             },
             "line": 74,
             "name": "There should be a valid username respecting",
@@ -2287,8 +2302,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "status": "failed"
+              "duration": 853205600,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2299,7 +2314,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 428603100,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2311,7 +2327,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:00.988Z",
+        "start_timestamp": "2020-12-11T02:49:32.097Z",
         "before": [
           {
             "result": {
@@ -2331,8 +2347,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998200,
-              "status": "skipped"
+              "duration": 162848300,
+              "status": "passed"
             },
             "line": 72,
             "name": "Enter the valid username \"g1\" with valid credentail",
@@ -2349,8 +2365,8 @@
           },
           {
             "result": {
-              "duration": 999200,
-              "status": "skipped"
+              "duration": 109898000,
+              "status": "passed"
             },
             "line": 73,
             "name": "click on email box",
@@ -2361,8 +2377,8 @@
           },
           {
             "result": {
-              "duration": 999200,
-              "status": "skipped"
+              "duration": 10059811300,
+              "status": "passed"
             },
             "line": 74,
             "name": "There should be a valid username respecting",
@@ -2390,9 +2406,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 997900,
-              "status": "failed"
+              "duration": 797261700,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2403,8 +2418,8 @@
           },
           {
             "result": {
-              "duration": 998900,
-              "status": "skipped"
+              "duration": 394148700,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2416,7 +2431,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.006Z",
+        "start_timestamp": "2020-12-11T02:49:43.717Z",
         "before": [
           {
             "result": {
@@ -2436,8 +2451,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 213799900,
+              "status": "passed"
             },
             "line": 72,
             "name": "Enter the valid username \"gmibankuser\" with valid credentail",
@@ -2454,8 +2469,8 @@
           },
           {
             "result": {
-              "duration": 999500,
-              "status": "skipped"
+              "duration": 114893500,
+              "status": "passed"
             },
             "line": 73,
             "name": "click on email box",
@@ -2466,7 +2481,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10013198500,
+              "status": "passed"
             },
             "line": 74,
             "name": "There should be a valid username respecting",
@@ -2494,9 +2510,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 998700,
-              "status": "failed"
+              "duration": 856206500,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2507,7 +2522,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 346679600,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2519,10 +2535,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.020Z",
+        "start_timestamp": "2020-12-11T02:49:55.256Z",
         "before": [
           {
             "result": {
+              "duration": 1000900,
               "status": "passed"
             },
             "match": {
@@ -2539,8 +2556,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998800,
-              "status": "skipped"
+              "duration": 253764400,
+              "status": "passed"
             },
             "line": 72,
             "name": "Enter the valid username \"gmibankuser01\" with valid credentail",
@@ -2557,7 +2574,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 138870200,
+              "status": "passed"
             },
             "line": 73,
             "name": "click on email box",
@@ -2568,7 +2586,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10061852500,
+              "status": "passed"
             },
             "line": 74,
             "name": "There should be a valid username respecting",
@@ -2596,8 +2615,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "status": "failed"
+              "duration": 885179500,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2608,8 +2627,8 @@
           },
           {
             "result": {
-              "duration": 998500,
-              "status": "skipped"
+              "duration": 404627000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2621,7 +2640,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.035Z",
+        "start_timestamp": "2020-12-11T02:50:06.922Z",
         "before": [
           {
             "result": {
@@ -2641,8 +2660,8 @@
         "steps": [
           {
             "result": {
-              "duration": 998400,
-              "status": "skipped"
+              "duration": 239777000,
+              "status": "passed"
             },
             "line": 84,
             "name": "Enter the e-mail \"a@gmail.com\" with valid credential",
@@ -2659,8 +2678,8 @@
           },
           {
             "result": {
-              "duration": 999700,
-              "status": "skipped"
+              "duration": 93912800,
+              "status": "passed"
             },
             "line": 85,
             "name": "click on new password box",
@@ -2671,7 +2690,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10063673100,
+              "status": "passed"
             },
             "line": 86,
             "name": "There should be a valid email respecting",
@@ -2699,9 +2719,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999100,
-              "status": "failed"
+              "duration": 893170700,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2712,7 +2731,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 424607500,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2724,7 +2744,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.052Z",
+        "start_timestamp": "2020-12-11T02:50:18.624Z",
         "before": [
           {
             "result": {
@@ -2744,8 +2764,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999800,
-              "status": "skipped"
+              "duration": 188824600,
+              "status": "passed"
             },
             "line": 84,
             "name": "Enter the e-mail \"a@b.com\" with valid credential",
@@ -2762,7 +2782,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 119888700,
+              "status": "passed"
             },
             "line": 85,
             "name": "click on new password box",
@@ -2773,7 +2794,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10016833700,
+              "status": "passed"
             },
             "line": 86,
             "name": "There should be a valid email respecting",
@@ -2801,9 +2823,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999600,
-              "status": "failed"
+              "duration": 890176000,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2814,8 +2835,8 @@
           },
           {
             "result": {
-              "duration": 1000300,
-              "status": "skipped"
+              "duration": 391640200,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2827,7 +2848,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.065Z",
+        "start_timestamp": "2020-12-11T02:50:30.275Z",
         "before": [
           {
             "result": {
@@ -2847,8 +2868,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "duration": 373650000,
+              "status": "passed"
             },
             "line": 84,
             "name": "Enter the e-mail \"gmibankuser01@gmail.com\" with valid credential",
@@ -2865,7 +2886,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 186828100,
+              "status": "passed"
             },
             "line": 85,
             "name": "click on new password box",
@@ -2876,7 +2898,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10049775600,
+              "status": "passed"
             },
             "line": 86,
             "name": "There should be a valid email respecting",
@@ -2904,8 +2927,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "status": "failed"
+              "duration": 850214100,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -2916,8 +2939,8 @@
           },
           {
             "result": {
-              "duration": 999900,
-              "status": "skipped"
+              "duration": 414615000,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -2929,11 +2952,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.074Z",
+        "start_timestamp": "2020-12-11T02:50:42.172Z",
         "before": [
           {
             "result": {
-              "duration": 1000300,
               "status": "passed"
             },
             "match": {
@@ -2950,7 +2972,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 348679000,
+              "status": "passed"
             },
             "line": 97,
             "name": "Enter the new \"234@!Abc+\u003d\" with valid credential",
@@ -2967,7 +2990,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 95907800,
+              "status": "passed"
             },
             "line": 98,
             "name": "click on new password confirmation box",
@@ -2978,7 +3002,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10057591000,
+              "status": "passed"
             },
             "line": 99,
             "name": "There should be a valid password respecting",
@@ -3006,9 +3031,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 998400,
-              "status": "failed"
+              "duration": 871161000,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -3019,8 +3043,8 @@
           },
           {
             "result": {
-              "duration": 999300,
-              "status": "skipped"
+              "duration": 382642600,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -3032,7 +3056,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.093Z",
+        "start_timestamp": "2020-12-11T02:50:53.947Z",
         "before": [
           {
             "result": {
@@ -3052,8 +3076,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999500,
-              "status": "skipped"
+              "duration": 251766000,
+              "status": "passed"
             },
             "line": 108,
             "name": "Enter the same password with valid credential \"234@!Abc+\u003d\"",
@@ -3070,8 +3094,8 @@
           },
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "duration": 99906900,
+              "status": "passed"
             },
             "line": 109,
             "name": "click on new password box02",
@@ -3082,7 +3106,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10050062700,
+              "status": "passed"
             },
             "line": 110,
             "name": "entry should be same with password",
@@ -3110,9 +3135,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class gmibank.stepdefinitions.US_01_StepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException: Cannot invoke \"java.util.Properties.getProperty(String)\" because \"gmibank.utilities.ConfigurationReader.properties\" is null\r\n\tat gmibank.utilities.ConfigurationReader.getProperty(ConfigurationReader.java:19)\r\n\tat gmibank.utilities.Driver.getDriver(Driver.java:35)\r\n\tat gmibank.pages.US_01_02Page.\u003cinit\u003e(US_01_02Page.java:11)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.\u003cinit\u003e(US_01_StepDefinitions.java:13)\r\n\t... 38 more\r\n",
-              "duration": 999000,
-              "status": "failed"
+              "duration": 845215900,
+              "status": "passed"
             },
             "line": 5,
             "name": "Go to gmibank.com home page us01",
@@ -3123,8 +3147,8 @@
           },
           {
             "result": {
-              "duration": 997400,
-              "status": "skipped"
+              "duration": 393635900,
+              "status": "passed"
             },
             "line": 6,
             "name": "Click to User Account menu and Click to Register",
@@ -3136,7 +3160,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-09T22:20:01.109Z",
+        "start_timestamp": "2020-12-11T02:51:05.614Z",
         "before": [
           {
             "result": {
@@ -3156,8 +3180,8 @@
         "steps": [
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "duration": 200812800,
+              "status": "passed"
             },
             "line": 116,
             "name": "Enter the SSN \"456-35-6634\" with valid credential",
@@ -3174,7 +3198,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 194820100,
+              "status": "passed"
             },
             "line": 117,
             "name": "Enter the name \"Hasan\" with valid credential",
@@ -3191,8 +3216,8 @@
           },
           {
             "result": {
-              "duration": 998300,
-              "status": "skipped"
+              "duration": 193332000,
+              "status": "passed"
             },
             "line": 118,
             "name": "Enter the last name \"Kara\" with valid credential",
@@ -3209,7 +3234,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 297724200,
+              "status": "passed"
             },
             "line": 119,
             "name": "Enter the Address",
@@ -3220,7 +3246,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 255281400,
+              "status": "passed"
             },
             "line": 120,
             "name": "Enter the GSM \"567-891-8294\" with valid credential",
@@ -3237,7 +3264,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 296726500,
+              "status": "passed"
             },
             "line": 121,
             "name": "Enter the valid username \"gmibankuser01\" with valid credentail",
@@ -3254,8 +3282,8 @@
           },
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 353181900,
+              "status": "passed"
             },
             "line": 122,
             "name": "Enter the e-mail \"gmibankuser01@gmail.com\" with valid credential",
@@ -3272,8 +3300,8 @@
           },
           {
             "result": {
-              "duration": 1000400,
-              "status": "skipped"
+              "duration": 327205600,
+              "status": "passed"
             },
             "line": 123,
             "name": "Enter the new \"234@!Abc+\u003d\" with valid credential",
@@ -3290,8 +3318,8 @@
           },
           {
             "result": {
-              "duration": 1000500,
-              "status": "skipped"
+              "duration": 182340000,
+              "status": "passed"
             },
             "line": 124,
             "name": "Enter the same password with valid credential \"234@!Abc+\u003d\"",
@@ -3308,7 +3336,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 153859000,
+              "status": "passed"
             },
             "line": 125,
             "name": "Click to Register button",
@@ -3319,7 +3348,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-LAMCHMC\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 6f0139ff362eb2ae2029718e84036d73\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat gmibank.stepdefinitions.US_01_StepDefinitions.there_should_be_Succes_message(US_01_StepDefinitions.java:210)\r\n\tat ✽.There should be Succes message.(file:///C:/Users/admin/IdeaProjects/GMIBankProject_018/src/test/resources/features/us01.feature:126)\r\n",
+              "duration": 10079100000,
+              "status": "failed"
             },
             "line": 126,
             "name": "There should be Succes message.",

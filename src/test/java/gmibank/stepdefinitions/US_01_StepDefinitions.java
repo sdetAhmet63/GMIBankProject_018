@@ -205,8 +205,10 @@ import java.util.Map;
     us_01_02Page.registration_SubmitButton.click();
     }
 
+
     @Then("There should be Succes message.")
     public void there_should_be_Succes_message() {
+        Driver.wait(5);
     Assert.assertTrue(us_01_02Page.registration_successMessage.isDisplayed());
     }
 }
