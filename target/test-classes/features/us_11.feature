@@ -4,12 +4,13 @@ Feature: us_11 tests
     Given user enters gmibank homepage
     And user clicks entry button
     And user clicks  signIn link
-    And user enters admin username "team18_admin"
-    And user enters admin password "Team18admin"
+    And user enters admin username "team18_employee"
+    And user enters admin password "Team18employee"
     And user clicks signIn button
     And user clicks myOperations link
     And user clicks manageCostomers link
     Then user clicks createNewCustomer link
+
 
   @tc11_01
   Scenario Outline: Create Date negative test (for in the past)
@@ -54,7 +55,6 @@ Feature: us_11 tests
     Given user select an account from dropbox
     And user verifies an account can be selected
     Then user signOut
-
 
   @tc11_06
   Scenario: Zelle Enrolled option checkbox positive test

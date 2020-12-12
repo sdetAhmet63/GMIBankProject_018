@@ -1,7 +1,6 @@
 package gmibank.pages;
 
 import gmibank.utilities.Driver;
-import io.cucumber.java.tr.Fakat;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -20,8 +19,8 @@ public class US_11_Page {
     public WebElement username;
     @FindBy(id = "password")
     public WebElement password;
-    @FindBy(xpath = "//button[@type='submit']")
-    public  WebElement signInButton;
+    @FindBy(xpath = "//button[@type='submit']")     //xpath = "//button[@type='submit']"
+    public  WebElement signIn1Button;
     @FindBy(xpath = "//span[.='My Operations']")
     public WebElement myOperations;
     @FindBy(xpath="//span[.='Manage Customers']")

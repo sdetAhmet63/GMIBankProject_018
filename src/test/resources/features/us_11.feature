@@ -11,10 +11,12 @@ Feature: us_11 tests
     And user clicks manageCostomers link
     Then user clicks createNewCustomer link
 
+
   @tc11_01
   Scenario Outline: Create Date negative test (for in the past)
     Given user send data to date box "<Create Date> "
     Then user verifies valid data entry to Create Date box
+
     Then user signOut
     Examples: Test Dates
       | Create Date |
@@ -54,7 +56,6 @@ Feature: us_11 tests
     Given user select an account from dropbox
     And user verifies an account can be selected
     Then user signOut
-
 
   @tc11_06
   Scenario: Zelle Enrolled option checkbox positive test

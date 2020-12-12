@@ -24,7 +24,7 @@ public class US_016_Page {
     @FindBy(id = "password")
     public WebElement password;
 
-    @FindBy(xpath = "//button[@type='submit']")
+   @FindBy(xpath = "//button[@type='submit']")
     public  WebElement signInButton;
 
     @FindBy(xpath = "//span[.='My Operations']")

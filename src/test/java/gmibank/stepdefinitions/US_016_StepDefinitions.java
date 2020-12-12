@@ -1,3 +1,4 @@
+
 package gmibank.stepdefinitions;
 
 import gmibank.pages.US_016_Page;
@@ -16,8 +17,6 @@ public class US_016_StepDefinitions {
     US_016_Page page = new US_016_Page();
 
     Actions actions = new Actions(Driver.getDriver());
-
-
 
 
     @Given("user goes to gmibank homepage")
@@ -165,5 +164,4 @@ public class US_016_StepDefinitions {
 
 
 }
-
 

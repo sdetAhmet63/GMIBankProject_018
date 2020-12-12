@@ -18,7 +18,7 @@ public class US_11_StepDefinitions {
     @Given("user enters gmibank homepage")
     public void user_enters_gmibank_homepage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmibank_url"));
-        Driver.wait(1);
+        Driver.wait(3);
 
     }
 
@@ -31,7 +31,7 @@ public class US_11_StepDefinitions {
     public void user_clicks_signIn_link() {
                Driver.wait(5);
                 us_11_page.signIn.click();
-                Driver.wait(5);
+
     }
 
     @Given("user enters admin username {string}")
@@ -44,24 +44,24 @@ public class US_11_StepDefinitions {
         us_11_page.password.sendKeys(string);
     }
 
-    @Given("user clicks signIn button")
-    public void user_clicks_signIn_button() {
-        us_11_page.signInButton.click();
+ // @Given("user clicks signIn button")
+   // public void user_clicks_signIn_button() {
+    //us_11_page.signIn1Button.click();
 
-    }
+    //}
 
     @Given("user clicks myOperations link")
     public void user_clicks_myOperations_link() {
         Driver.wait(2);
         us_11_page.myOperations.click();
-        Driver.wait(2);
+
     }
 
     @Given("user clicks manageCostomers link")
     public void user_clicks_manageCustomers_link() {
         Driver.wait(5);
        us_11_page.manageCustomer.click();
-        Driver.wait(10);
+
 
     }
 
@@ -83,14 +83,12 @@ public class US_11_StepDefinitions {
 
     }
 
-    @Then("user signOut")
-    public void user_signOut() {
-        Driver.wait(2);
-       us_11_page.signOut.click();
+   @Then("user signOut")
+   public void user_signOut() {
+    Driver.wait(2);
+   us_11_page.signOut.click();
 
-
-
-    }
+   }
 
     @Given("user send invalid data format to date box {string}")
     public void user_send_invalid_data_format_to_date_box(String string) {
@@ -116,8 +114,8 @@ public class US_11_StepDefinitions {
     @Given("user verifies valid date format to Create Date box")
     public void user_verifies_valid_date_format_to_Create_Date_box() {
 
-        //Assert.assertTrue(us11Page.createDateBox.getAttribute("class").contains("invalid"));
-        Assert.assertTrue(true);
+        Assert.assertTrue(us_11_page.CreateDateBox.getAttribute("class").contains("invalid"));
+      //  Assert.assertTrue(true);
 
     }
 
@@ -170,5 +168,7 @@ public class US_11_StepDefinitions {
                 Assert.assertTrue(us_11_page.zelleEnrolledBox.isSelected());
             Driver.closeDriver();
             }
+
+
             }
 

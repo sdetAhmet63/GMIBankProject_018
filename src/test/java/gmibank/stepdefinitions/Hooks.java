@@ -1,6 +1,7 @@
 package gmibank.stepdefinitions;
 
 import gmibank.utilities.Driver;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
@@ -13,7 +14,7 @@ public class Hooks {
     //her scenario dan once calisir
     @Before(order = 1)
     public void setUp(){
-        //System.out.println("Hooks class- Setup Method");
+        System.out.println("Hooks class- Setup Method");
     }
 
     //TAGGED Hooks Annotation
@@ -24,9 +25,9 @@ public class Hooks {
   //  }
 
     //Her scenario dan sonra
-//    @After
+     @After
     public void tearDown(Scenario scenario){
-        //System.out.println("Hooks class - tearDown Method ");
+        System.out.println("Hooks class - tearDown Method ");
 
         //screenshot almak icin
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -38,10 +39,8 @@ public class Hooks {
             scenario.embed(screenshot,"image/png");
         }
 
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
-
-
 
 
 }
