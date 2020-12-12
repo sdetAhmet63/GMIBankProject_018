@@ -7,7 +7,7 @@ Feature: US_16 tests
     And user goes to signIn page
     And user logs in with the valid username "Hakan"
     And user logs in with the valid password "Hakanyanbakan724567,"
-    And user clicks. signIn button
+    And user clicks signIn button
     Then user should goes My Operations box
 
   @TC1601
