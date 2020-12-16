@@ -1,5 +1,4 @@
 package gmibank.stepdefinitions;
-
 import com.github.javafaker.Faker;
 import gmibank.pages.US_08_Page;
 import gmibank.pages.US_17_Page;
@@ -15,46 +14,39 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 public class US_17_StepDefinitions {
-   US_17_Page us17Page = new US_17_Page();
+    US_17_Page us17Page = new US_17_Page();
     @Given("user goes to {string} page")
     public void user_goes_to_page(String string) {
         Driver.getDriver().get(string);
     }
-
     @Given("admin provides valid username for admin")
     public void admin_provides_valid_username_for_admin() {
         us17Page.userNameBox.sendKeys(ConfigurationReader.getProperty("admin_username"));
     }
-
     @Given("admin provides valid password for admin")
     public void admin_provides_valid_password_for_admin() {
         us17Page.passwordBox.sendKeys(ConfigurationReader.getProperty("admin_password"));
     }
-
     @Given("admin clicks sign in button for admin")
     public void admin_clicks_sign_in_button_for_admin() {
         us17Page.signInButton.click();
         Driver.wait(4);
     }
-
-
     @Then("admin creates one user from faker then selects one role as {string} from profiles dropdown and clicks save button")
     public void admin_creates_one_user_from_faker_then_selects_one_role_as_from_profiles_dropdown_and_clicks_save_button(String string) {
-         Driver.wait(3);
-         Driver.wait(3);
-         us17Page.administrationButton.click();
-         Driver.wait(10);
-         us17Page.userManagementButton.click();
+        Driver.wait(3);
+        Driver.wait(3);
+        us17Page.administrationButton.click();
+        Driver.wait(10);
+        us17Page.userManagementButton.click();
         Driver.wait(2);
-      //  Driver.getDriver().get("http://www.gmibank.com/admin/user-management?page=1&sort=id,asc");
+        //  Driver.getDriver().get("http://www.gmibank.com/admin/user-management?page=1&sort=id,asc");
         Driver.wait(2);
         us17Page.createANewUserButton.click();
         Driver.wait(3);
         Faker faker = new Faker();
         String loginName = faker.name().username();
-
         us17Page.loginNameBox.sendKeys(loginName);
-
         us17Page.nameBox.sendKeys(faker.name().firstName());
         us17Page.surnameBox.sendKeys(faker.name().lastName());
         us17Page.emailBox.sendKeys(faker.internet().emailAddress());
@@ -63,12 +55,11 @@ public class US_17_StepDefinitions {
         us17Page.roleAdminOption.click();
         us17Page.saveButton.click();
         Driver.wait(5);
-        Actions actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        Driver.wait(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-
-        Driver.wait(3);
+   //     Actions actions = new Actions(Driver.getDriver());
+    //    actions.sendKeys(Keys.PAGE_DOWN).perform();
+   //     Driver.wait(3);
+   //     actions.sendKeys(Keys.PAGE_DOWN).perform();
+  //      Driver.wait(3);
         //    JSExecutor.clickElementByJS(us17Page.lastPageButton);
         //   Assert.assertTrue(us17Page.lastPageButton.isEnabled());
         //us17Page.lastPageButton.click();
@@ -83,9 +74,9 @@ public class US_17_StepDefinitions {
         // Driver.wait(2);
         Driver.getDriver().get("http://www.gmibank.com/admin/user-management?page=" + lastPageNumber1 + "&sort=id,asc");
         Driver.wait(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        Driver.wait(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+      //  actions.sendKeys(Keys.PAGE_DOWN).perform();
+      //  Driver.wait(3);
+      //  actions.sendKeys(Keys.PAGE_DOWN).perform();
         Driver.wait(3);
         System.out.println("loginName:" + loginName + " dir");
         Driver.wait(3);
@@ -93,46 +84,43 @@ public class US_17_StepDefinitions {
         JSExecutor.clickElementByJS(lastEditButton);
         Driver.wait(3);
         if (string.equals("ROLE-ADMIN")) {
-            actions.sendKeys(Keys.PAGE_DOWN).perform();
+         //   actions.sendKeys(Keys.PAGE_DOWN).perform();
             Driver.wait(2);
             Select select = new Select(us17Page.selectButton);
             select.selectByIndex(0);
             us17Page.saveButton.click();
             Driver.wait(2);
         } else if (string.equals("ROLE-USER")) {
-            actions.sendKeys(Keys.PAGE_DOWN).perform();
+    //        actions.sendKeys(Keys.PAGE_DOWN).perform();
             Driver.wait(2);
             Select select = new Select(us17Page.selectButton);
             select.selectByIndex(1);
             us17Page.saveButton.click();
             Driver.wait(2);
         } else if (string.equals("ROLE-EMPLOYEE")) {
-            actions.sendKeys(Keys.PAGE_DOWN).perform();
+     //       actions.sendKeys(Keys.PAGE_DOWN).perform();
             Driver.wait(2);
             Select select = new Select(us17Page.selectButton);
             Driver.wait(2);
             select.selectByIndex(2);
             Driver.wait(2);
             us17Page.saveButton.click();
-
             Driver.wait(2);
         } else if (string.equals("ROLE-MANAGER")) {
-            actions.sendKeys(Keys.PAGE_DOWN).perform();
+     //       actions.sendKeys(Keys.PAGE_DOWN).perform();
             Driver.wait(2);
             Select select = new Select(us17Page.selectButton);
             select.selectByIndex(3);
             us17Page.saveButton.click();
             Driver.wait(2);
         } else if (string.equals("ROLE-CUSTOMER")) {
-            actions.sendKeys(Keys.PAGE_DOWN).perform();
+      //      actions.sendKeys(Keys.PAGE_DOWN).perform();
             Driver.wait(2);
             Select select = new Select(us17Page.selectButton);
             select.selectByIndex(4);
             us17Page.saveButton.click();
             Driver.wait(2);
         }
-
-
         Driver.wait(5);
         // String text= us17Page.succesText.getText();
         String pageText = Driver.getDriver().getPageSource();
@@ -140,29 +128,23 @@ public class US_17_StepDefinitions {
         //  System.out.println(pageText);
         Assert.assertTrue(pageText.contains("success"));
         System.out.println("Admin can update user with " + string);
-
-
         Driver.wait(2);
         Driver.getDriver().get("http://www.gmibank.com/admin/user-management?page=" + lastPageNumber1 + "&sort=id,asc");
         Driver.wait(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+    //    actions.sendKeys(Keys.PAGE_DOWN).perform();
         Driver.wait(3);
-
-
         Driver.wait(3);
         WebElement lastViewButton = Driver.getDriver().findElement(By.xpath("//tr[@id='" + loginName + "']/td[10]/div/a[1]"));
         Driver.wait(3);
         boolean result = lastViewButton.isEnabled();
         Assert.assertTrue(result);
         System.out.println("View button clickable");
-
         Driver.wait(3);
         WebElement lastEditButton1 = Driver.getDriver().findElement(By.xpath("//tr[@id='" + loginName + "']/td[10]/div/a[2]"));
         Driver.wait(3);
         boolean result2 = lastEditButton1.isEnabled();
         Assert.assertTrue(result2);
         System.out.println("Edit button clickable");
-
         Driver.wait(3);
         WebElement lastDeleteButton = Driver.getDriver().findElement(By.xpath("//tr[@id='" + loginName + "']/td[10]/div/a[3]"));
         Driver.wait(3);

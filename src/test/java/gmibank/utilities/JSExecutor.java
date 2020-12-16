@@ -1,8 +1,6 @@
 package gmibank.utilities;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
 public class JSExecutor {
     //elementi methodun icine yazdigimizda js bu elemnte tiklar.
     public static void clickElementByJS(WebElement element){
