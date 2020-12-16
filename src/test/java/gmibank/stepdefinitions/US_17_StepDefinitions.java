@@ -1,6 +1,5 @@
 package gmibank.stepdefinitions;
 import com.github.javafaker.Faker;
-import gmibank.pages.US_08_Page;
 import gmibank.pages.US_17_Page;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
@@ -9,9 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 public class US_17_StepDefinitions {
     US_17_Page us17Page = new US_17_Page();
