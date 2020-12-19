@@ -1,0 +1,85 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T23:54:25.967Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "in states read all states you created and validate them data set",
+        "description": "",
+        "id": "us-22-validate-all-states;in-states-read-all-states-you-created-and-validate-them-data-set",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "in states user sets all response using end point\"https://www.gmibank.com/api/tp-states\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "in states user deserialization data json to java pojo",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "in states user validate data",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us22statesDBtests"
+          }
+        ]
+      }
+    ],
+    "name": "US_22 Validate all states",
+    "description": "",
+    "id": "us-22-validate-all-states",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_22.feature",
+    "tags": [
+      {
+        "name": "@us22statesDBtests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

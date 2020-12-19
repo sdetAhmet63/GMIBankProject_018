@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.074">
+<testcase classname="US_22 Validate all states" name="in states read all states you created and validate them data set" time="0.375">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given in states user sets all response using end point"https://www.gmibank.com/api/tp-states".undefined
+And in states user deserialization data json to java pojo...................undefined
+Then in states user validate data...........................................undefined
+]]></failure>
+</testcase>
+</testsuite>
