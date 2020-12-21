@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/createnewapplicant.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_22.feature");
 formatter.feature({
-  "name": "Register Workflow",
+  "name": "System should allow to read all states info using api end point",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@createnewapplicant"
+      "name": "@us22statesDBtests"
     }
   ]
 });
 formatter.scenario({
-  "name": "Register new users for GMI Bank",
+  "name": "Read all states you created and validate them from your data set",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@createnewapplicant"
+      "name": "@us22statesDBtests"
     }
   ]
 });
@@ -23,7 +23,7 @@ formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user is on the registration page",
+  "name": "user gets all data for states using api end point \"https://www.gmibank.com/api/tp-states\"",
   "keyword": "Given "
 });
 formatter.match({});
@@ -31,7 +31,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "user enters ssn number as SSN",
+  "name": "user deserializes states data as json to java pojo",
   "keyword": "And "
 });
 formatter.match({});
@@ -39,63 +39,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "user enters firstname and lastname as firstname and lastname",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides address address",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides mobilephone as mobilephone",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides a username username",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user provides email id as email",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters the password as firstpassword",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user confirms the new password secondpassword",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks on register button and sees the success message as message",
+  "name": "user validates the data for states",
   "keyword": "Then "
 });
 formatter.match({});

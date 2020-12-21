@@ -3,28 +3,29 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-18T23:54:25.967Z",
+        "start_timestamp": "2020-12-20T04:44:16.369Z",
         "before": [
           {
             "result": {
+              "duration": 5000000,
               "status": "skipped"
             },
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+              "location": "gmibank.com.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
         "line": 3,
-        "name": "in states read all states you created and validate them data set",
+        "name": "Read all states you created and validate them from your data set",
         "description": "",
-        "id": "us-22-validate-all-states;in-states-read-all-states-you-created-and-validate-them-data-set",
+        "id": "system-should-allow-to-read-all-states-info-using-api-end-point;read-all-states-you-created-and-validate-them-from-your-data-set",
         "after": [
           {
             "result": {
               "status": "skipped"
             },
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+              "location": "gmibank.com.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -36,7 +37,7 @@
               "status": "undefined"
             },
             "line": 4,
-            "name": "in states user sets all response using end point\"https://www.gmibank.com/api/tp-states\"",
+            "name": "user gets all data for states using api end point \"https://www.gmibank.com/api/tp-states\"",
             "match": {},
             "keyword": "Given "
           },
@@ -45,7 +46,7 @@
               "status": "undefined"
             },
             "line": 5,
-            "name": "in states user deserialization data json to java pojo",
+            "name": "user deserializes states data as json to java pojo",
             "match": {},
             "keyword": "And "
           },
@@ -54,7 +55,7 @@
               "status": "undefined"
             },
             "line": 6,
-            "name": "in states user validate data",
+            "name": "user validates the data for states",
             "match": {},
             "keyword": "Then "
           }
@@ -66,9 +67,9 @@
         ]
       }
     ],
-    "name": "US_22 Validate all states",
+    "name": "System should allow to read all states info using api end point",
     "description": "",
-    "id": "us-22-validate-all-states",
+    "id": "system-should-allow-to-read-all-states-info-using-api-end-point",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/US_22.feature",
     "tags": [
