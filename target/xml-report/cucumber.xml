@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.264">
-<testcase classname="System should allow to read all states info using api end point" name="Read all states you created and validate them from your data set" time="1.65">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user gets all data for states using api end point "https://www.gmibank.com/api/tp-states".undefined
-And user deserializes states data as json to java pojo......................undefined
-Then user validates the data for states.....................................undefined
-]]></failure>
-</testcase>
-</testsuite>
