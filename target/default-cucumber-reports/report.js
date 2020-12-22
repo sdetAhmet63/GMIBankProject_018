@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@us22statesDBtests"
+      "name": "@us22statesTests"
     }
   ]
 });
@@ -15,12 +15,12 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@us22statesDBtests"
+      "name": "@us22statesTests"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user gets all data for states using api end point \"https://www.gmibank.com/api/tp-states\"",
@@ -47,6 +47,6 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

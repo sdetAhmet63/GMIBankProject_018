@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-20T04:44:16.369Z",
+        "start_timestamp": "2020-12-21T11:51:49.171Z",
         "before": [
           {
             "result": {
               "duration": 5000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.com.stepdefinitions.Hooks.setUp()"
@@ -22,7 +22,8 @@
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 145000000,
+              "status": "passed"
             },
             "match": {
               "location": "gmibank.com.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -62,7 +63,7 @@
         ],
         "tags": [
           {
-            "name": "@us22statesDBtests"
+            "name": "@us22statesTests"
           }
         ]
       }
@@ -74,7 +75,7 @@
     "uri": "file:src/test/resources/features/US_22.feature",
     "tags": [
       {
-        "name": "@us22statesDBtests",
+        "name": "@us22statesTests",
         "type": "Tag",
         "location": {
           "line": 1,
