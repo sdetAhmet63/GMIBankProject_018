@@ -1,25 +1,29 @@
 package gmibank.com.stepdefinitions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import gmibank.com.pojos.Country;
 import gmibank.com.pojos.Customer;
+
+import gmibank.com.utilities.*;
+
 import gmibank.com.utilities.ConfigurationReader;
 import gmibank.com.utilities.ReadTxt;
-import gmibank.com.utilities.TestBase;
 import gmibank.com.utilities.WriteToTxt;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+
+import static gmibank.com.jsonModels.CountryJson.CREATE_COUNTRY;
 
 import static io.restassured.RestAssured.*;
 
@@ -403,7 +407,7 @@ public class ApiStepDef {
                 "Accept",
                 ContentType.JSON)
                 .when()
-                .body("{\""+type+"\":\""+country+"\"}")
+                .body(CREATE_COUNTRY)
                 .post(api_endpoint_url)
                 .then()
                 .contentType(ContentType.JSON)
@@ -543,6 +547,27 @@ public class ApiStepDef {
 
 
     }
+
+    // =============================   JDBS....  ==============================
+
+    @Given("user gets all customer column data using {string} and {string}")
+    public void user_gets_all_customer_column_data_using_and(String query, String columnName) {
+
+        List<Object> allColumnData = DatabaseUtility.getColumnData(query,columnName);
+        System.out.println(allColumnData);
+    }
+
+    @Given("user sets all customer info to coreepondent files")
+    public void user_sets_all_customer_info_to_coreepondent_files() {
+
+    }
+
+    @Then("user validates all db customer info")
+    public void user_validates_all_db_customer_info() {
+
+    }
+
+
 
 
 

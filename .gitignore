@@ -1,5 +1,9 @@
 /target/
 /target/
 .idea
-testData.txt
+/*.iml
+/*.log
+runners
+/*.xml
+
 
