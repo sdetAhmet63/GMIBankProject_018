@@ -22,8 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-import static gmibank.com.jsonModels.CountryJson.CREATE_COUNTRY;
+import static gmibank.com.jsonModels.CountryJson.createCountry;
 
 import static io.restassured.RestAssured.*;
 
@@ -377,8 +376,6 @@ public class ApiStepDef {
            ssnNumbers.add(customers[i].getSsn());
         }
 
-        System.out.println(ssnNumbers);
-
         WriteToTxt.saveDataInFileWithSSN("allCustomerSsnNumber.txt1",customers);
         List<String> readSsnNumbers = ReadTxt.returnCustomerSNNList("allCustomerSsnNumber.txt1");
 
@@ -407,7 +404,10 @@ public class ApiStepDef {
                 "Accept",
                 ContentType.JSON)
                 .when()
-                .body(CREATE_COUNTRY)
+
+                .body(createCountry)
+
+
                 .post(api_endpoint_url)
                 .then()
                 .contentType(ContentType.JSON)
